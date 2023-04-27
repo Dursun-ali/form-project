@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Form Project</title>
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="titleLine-container length">
+        <label style="font-size: 18px;" class="title-container color">Personal Informations</label>
+        <div class="line-container"></div>
+      </div>
+      <div class="img-name-surname length2">
+        <div class="img-container">
+          
+          <label for="file-input">
+            <i  id="camera" class="fa-solid fa-camera"></i>   
+           <input  id="imgInp" class="file-input" onclick="noneIcon()" style="font-size: 10px; "  type="file" accept="image/*" >
+          
+
+           <section class="section">
+            <figure class="image is-5by3">
+              <img class="img" style="width: 112px; height: 112px; " id="imgOut" />
+            </figure>
+          </section>
+
+        </div>
+
+        <div class="nameSurnameContainer">
+          <label class="name-write color">Name*</label>
+          <div class="name names-inp">
+            <input id="name-inp" class="inp inputSize " style="width: 100%" type="text" onkeypress="return !(event.charCode >= 48 && event.charCode <= 57)" />
+          </div>
+          <label class="surname-write color">Surname*</label>
+          <div class="surname surnames-inp">
+            <input  id="surname-inp" class="inp inputSize" style="width: 100%" type="text" onkeypress="return !(event.charCode >= 48 && event.charCode <= 57)" />
+          </div>
+        </div>
+      </div>
+      <div class="EpostTel-container length">
+        <div class="Epost-container">
+          <label id="email-label" class="Epost-write color" >E-mail address*</label>
+          <div class="Epost">
+            <input id="epost-inp" class="inp inputSize" style="width: 100%" type="email" >
+          </div>
+        </div>
+        <div class="Tel-container">
+          <label class="tel-write color">Phone number</label>
+          <div class="tel">
+            <input
+              id="tel-inp"
+              class="inp inputSize"
+              style="width: 100%"
+              type="tel"
+              onkeydown="telefon(event)"
+            >
+          </div>
+        </div>
+      </div>
+      <div class="Adrress-container length">
+        <label class="Adress-write color">Adress</label>
+        <div class="Adrress">
+          <input
+            id="adress-inp"
+            class="inp inputSize"
+            maxlength="101"
+            onkeypress="return !(event.charCode >= 48 && event.charCode <= 57)"
+            onkeydown="adres(event)"
+            style="width: 100%"
+            type="text"
+          />
+        </div>
+      </div>
+      <div class="postCity-container length">
+        <div class="post-container">
+          <label class="post-write color">Post code</label>
+          <div class="post">
+            <input
+              id="post-inp"
+              class="inp inputSize"
+              style="width: 100%"
+              type="text"
+              maxlength="5"
+            >
+          </div>
+        </div>
+        <div class="city-container">
+          <label class="city-write color">City / District</label>
+          <div class="city">
+            <div class=" selectDiv">
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="font-family: sans-serif;cursor: pointer;" class="save-container length" onclick="submit()">
+        <div class="save-write" >SAVE</div>
+      </div>
+    </div>
+
+
+      <!-- kendi section yapımı deneme panelim -->
+      <!-- <div id="divId">
+        
+      </div> -->
+
+    <script src="form.js"></script>
+
+  </body>
+</html>

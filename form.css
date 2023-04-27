@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Khand', sans-serif;
+}
+
+:root {
+    --color1: #e5dcc3;
+    --color2: #C7BEA2;
+    --color3: #AAA492;
+    --color4: #9A9483;
+   
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: var(--color3); */
+    /* background: url(./asset/a.webp); */
+    background: url(./asset/xx.jpg);
+    background-size: 100% 100%;
+
+    
+}
+
+/* form yapımızın en dıs katmanı */
+.main-container {
+    
+    position: relative;
+    width: 42rem;
+    height: 34rem;
+     background-color: rgb(232, 232, 232); 
+    /* background-color: rgb(231, 226, 226); */
+    /* background-color: rgb(49, 49, 49); */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0); 
+    
+
+}
+
+/* bu kısım sagdan soldan esıt bosluk vermemızı saglıyor. */
+
+.inp {
+    box-sizing: border-box;
+    padding: 0 10px;
+    border: 2px solid rgba(255, 255, 255, 0.233) ;
+    border-radius: 5px;
+    outline:none;
+}
+
+
+.length {
+    height: 4rem;
+}
+
+.length2 {
+    height: 8rem;
+}
+
+/* kişisel bilgi ve cizgının yazılı oldugu container */
+
+.titleLine-container {
+    width: 100%;
+    margin: 1.4rem 0 0 0;
+}
+
+.title-container {
+    position: absolute;
+    top: 1.6rem;
+    width: 88%;
+    margin: 0 6%;
+    height: 1.4rem;
+}
+
+.line-container {
+    position: absolute;
+    top: 2.5rem;
+    width: 88%;
+    margin: 0 6%;
+    /* border-bottom: 3px solid rgba(255, 255, 255, 0.639); */
+    border-bottom: 3px solid  black ;
+    height: 1.2rem;
+    border-radius: 0.3rem;
+}
+
+/* kişisel bilgi ve cizgının yazılı oldugu container end */
+
+
+/* resim-isim-soyadın oldugu kocaman kısım */
+
+.img-name-surname {
+    position: relative;
+    width: 88%;
+    margin: 0 6%;
+    display: flex;
+}
+
+.img-container {
+    position: absolute;
+    top: 0.5rem;
+    position: relative;
+     /* background-color: rgb(243, 237, 237);  */
+     background-color: white;
+    width: 7rem;
+    height: 7rem;
+    
+    
+    
+    
+    
+}
+.img-container i{
+    font-size: 3.5rem;
+    position: absolute;
+    left: 1.8rem;
+    top: 1.8rem;
+}
+
+.color{
+    font-size: 0.85rem;
+    font-family: sans-serif;
+    color: black;
+}
+
+
+/* img kısmımdakı ınput yazımın asagı ınme olayı*/
+.file-input{
+    position: absolute;
+    top: 0rem;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    
+}
+/* --------------------------------------------- */
+
+
+.photo{
+    position: absolute;
+    top: 2.4rem;
+    left: 2.3rem;
+}
+
+.nameSurnameContainer {
+    width: 29rem;
+    height: 8rem;    
+    margin-left: 1.2rem;
+}
+
+.name-write {
+    display: flex;
+    align-items: center;
+    height: 1.7rem;
+    margin: 0.1rem 0;
+}
+
+.name {
+    height: 2.2rem;
+}
+
+.surname-write {
+    display: flex;
+    align-items: center;
+    height: 1.7rem;  
+    margin: 0.1rem 0;
+}
+
+.surname {
+
+    height: 2.2rem;
+}
+
+/* resim-isim-soyadın oldugu kocaman kısım END */
+
+
+
+/* eposta ve telefon css kod start */
+.EpostTel-container {
+    width: 88%;
+    margin: 0 6%;
+    display: flex;
+}
+
+.Epost-container {
+    width: 18rem;   
+}
+
+.Epost-write {
+    display: flex;
+    align-items: center;
+    height: 1.7rem;   
+    margin: 0.4rem 0;
+}
+
+.Epost {
+    height: 2.2rem;
+}
+
+.Tel-container {
+    margin-left: 1.2rem;
+    width: 18rem;   
+}
+
+.tel-write {
+    display: flex;
+    align-items: center;
+    height: 1.7rem;  
+    margin: 0.4rem 0;
+}
+
+.tel {
+    height: 2.2rem;
+}
+
+/* eposta ve telefon css kod end */
+
+/* adres start */
+.Adrress-container {
+    width: 88%;
+    margin: 0 6%;  
+}
+
+.Adress-write {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 1.7rem;    
+    margin: 0.4rem 0;
+}
+
+.Adrress {
+    width: 100%;
+    height: 2.2rem;
+    outline: none;
+}
+
+
+/* adres end */
+
+
+/* post and city start */
+.postCity-container {
+    width: 88%;
+    margin: 0 6%;    
+    display: flex;
+}
+
+.post-container {
+    width: 18rem;   
+}
+
+.post-write {
+    display: flex;
+    align-items: center;
+    height: 1.7rem;    
+    margin: 0.4rem 0;
+}
+
+.post {
+    height: 2.2rem;
+}
+
+.city-container {
+    margin-left: 1.2rem;
+    width: 18rem;    
+}
+
+.city-write {
+    display: flex;
+    align-items: center;
+    height: 1.7rem;    
+    margin: 0.4rem 0;
+}
+
+.city {
+    height: 2.2rem;
+}
+
+/* post and city end */
+
+/* save start */
+.save-container {
+    position: absolute;
+    bottom: -2rem;
+    width: 88%;
+    margin: 0.4rem 6%;
+    height: 2.8rem;
+    background-color: rgba(0, 76, 254, 0.938); 
+    font-size: 1.4rem;
+    position: relative;
+    border: 2px solid rgba(7, 68, 210, 0.938);
+    border-radius: 0.2rem;
+    box-shadow: 0px 0px 10px rgb(47, 61, 249); 
+    
+    
+
+
+}
+
+.save-write {
+    font-family: sans-serif;
+    color: white;
+    position: absolute;
+    top: 0.6rem;
+    left: 16rem;
+    
+    
+}
+
+/* save end */
+
+/* formumdaki inputun buyume kodu */
+
+.inputSize{
+    height: 1.9rem;
+}
+
+/* -------------------------------- */
+
+#mySelect{
+    width: 100%;
+    height: 2rem;
+    outline: 0;
+    border: transparent;
+    border-radius: 4px;
+}
+
+.opacity-0{
+    display: none;
+}
+
+
+
+
+
+
+/* kendi section yapımın denemesi */
+
+/* #cars{
+    width: 15rem;
+    height: 2rem;
+    background-color: #d3cebec6;
+} */
